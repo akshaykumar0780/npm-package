@@ -22,4 +22,4 @@ function Button({ children }: PropsType) {
   );
 }
 
-export {Button}
+export { Button };
