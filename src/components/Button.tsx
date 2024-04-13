@@ -2,11 +2,13 @@ import * as React from "react";
 import { ReactNode } from "react";
 
 type PropsType = {
-  children: React.ReactNode;
+  children: ReactNode;
+  onClick?: () => void;
 };
-function Button({ children }: PropsType) {
+function Button({ children, onClick  }: PropsType) {
   return (
     <button
+    onClick={onClick}
       style={{
         padding: "10px 20px",
         fontSize: "1.2rem",
